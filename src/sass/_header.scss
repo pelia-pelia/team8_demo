@@ -1,0 +1,33 @@
+header {
+  position: relative;
+  background-color: $white-text;
+}
+.header__navigation {
+    display: flex;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__logo {
+display: block;
+padding-top: 42px;
+}
+
+.header__logo--link {
+    display: flex;
+}
+
+.header__link {
+    display: inline-flex;
+    padding-top: 57px;
+}
+
+.mobile__menu {
+  display: flex;
+}
