@@ -1,0 +1,21 @@
+.list {
+    padding-left: 52px;
+    padding-right: 52px;
+}
+
+.list__item {
+    font-weight: $font-weight700;
+    letter-spacing: $LetterSpacing08;
+    line-height: $LineHeight2-00;
+    font-size: $FontSize14;
+}
+
+.list__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.list__text {
+    margin: 0;
+    padding: 0;
+}
+
