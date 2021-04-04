@@ -4,6 +4,7 @@
 
 .header__logo--link {
   display: flex;
+ 
 }
 
 .logo__title {
@@ -12,6 +13,7 @@
   line-height: $LineHeight1-23;
   letter-spacing: $LetterSpacing04;
   color: $black-text;
+
 }
 
 .logo__title--letter {
@@ -22,8 +24,15 @@
   }
 }
 
-.logo__icone {
+.header__icon--logo {
+  // max-width: 14px;
+  // max-height: 20px;
   fill: $orange-text;
+  @media screen and (min-width: $tablet){
+    //  max-width: 22px;
+    //  max-height: 30px;
+  }
+  
 }
 
 .logo__text {

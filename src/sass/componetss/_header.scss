@@ -3,7 +3,9 @@ header {
   background-color: $white-text;
 }
 .header__navigation {
+    position: relative;
     display: flex;
+    justify-content: space-between;
 }
 
 .header__menu {
@@ -18,7 +20,10 @@ display: none;
 }
 
 .header__logo {
-padding-top: 42px;
+  padding-top: 31px;
+  @media screen and (min-width: $desktop) {
+  padding-top: 42px;
+  }
 }
 
 .header__link {
@@ -44,11 +49,12 @@ display: none;
  transition-property: background-color, border, color;
  transition-duration: 250ms;
  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- padding: 0px;
-color: $orange-text;
-width: 336px;
-height: 70px;
+ color: $orange-text;
+ background-color: inherit;
+ width: 336px;
+ height: 70px;
 border: 2px solid $orange-text;
+padding: 0;
 }
 @media screen and (min-width: $tablet){
 margin-top: 30px;
@@ -87,27 +93,23 @@ margin-top: 30px;
 
 .menu-toggle {
   position: absolute;
-  top: 8px;
-  right: 13px;
-  width: 40px;
-  height: 40px;
+  right: 20px;
+  top: 38px;
   outline: none;
   border: none;
   background-color: inherit;
   border-bottom: none;
   cursor: pointer;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-top: 0px;
+
   @extend%transitionFill;
   ;
 
   & :hover {
-    fill: var(--accent-color);
+    fill: $orange-text;
   }
 
   &:focus-within {
-    fill: var(--accent-color);
+    fill: $orange-text;
   }
 
   @media (min-width: 480px) {
@@ -120,31 +122,37 @@ margin-top: 30px;
 }
 
 .heder__icon--open {
-  fill: var(--title-text-color);
+  display: flex;
+  width: 20.5px;
+  height: 12px;
+  fill: $black-text;
   @extend %transitionFill;
 
   & :hover {
-    fill: var(--accent-color);
+    fill: $orange-text;
   }
 
   &:focus-within {
-    fill: var(--accent-color);
+    fill: $orange-text;
   }
 }
 
 .heder__icon--close {
+  display: flex;
   left: 27.5%;
   right: 25.83%;
   top: 27.5%;
   bottom: 25.83%;
-  fill: var(--title-text-color);
+  width: 14.5px;
+  height: 14.5px;
+  fill: $white-text;
   @extend %transitionFill;
 
   & :hover {
-    fill: var(--accent-color);
+    fill: $orange-text;
   }
 
   &:focus-within {
-    fill: var(--accent-color);
+    fill: $orange-text;
   }
 }
