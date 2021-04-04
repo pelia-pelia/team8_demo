@@ -1,23 +1,9 @@
-.advantages {
-    padding-top: 77px;
-    padding-bottom: 50px;
-}
-
 .list {
     padding-left: 52px;
     padding-right: 52px;
-
-    @media (min-width: $tablet) {
-        display: flex;
-        flex-direction: row;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
 }
 
 .list__item {
-    display: inline-flex;
-    align-items: center;
     font-weight: $font-weight700;
     letter-spacing: $LetterSpacing08;
     line-height: $LineHeight2-00;
@@ -26,27 +12,10 @@
 
 .list__item:not(:last-child) {
     margin-bottom: 30px;
-
-    @media (min-width: $tablet) {
-        margin-bottom: 0;
-        margin-right: 21px;
-    }
-
-    @media (min-width: $desktop) {
-        margin-right: 10px;
-    }
 }
 
 .list__text {
     margin: 0;
     padding: 0;
-}
-
-.list_img {
-    margin-right: 10px;
-
-    @media (min-width: $desktop) {
-        margin-right: -10px;
-    }
 }
 
