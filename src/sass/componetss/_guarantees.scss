@@ -1,0 +1,65 @@
+.guarantees {
+  padding-top: 50px;
+
+  &__title {
+    margin: 0;
+    text-align: center;
+    font-weight: $font-weight800;
+    font-size: $FontSize26;
+    line-height: $LineHeight1-30;
+    letter-spacing: $LetterSpacing04;
+    @media (min-width: $desktop) {
+      font-size: $FontSize46;
+      letter-spacing: $LetterSpacing03;
+    }
+  }
+
+  &__container {
+    margin-top: 30px;
+    @media screen and (max-width: 767px) {
+      padding: 0px;
+    }
+  }
+
+  &__list {
+    min-width: 320px;
+    background-color: $background-color-garant;
+    padding: 30px 20px 31px 27px;
+
+    font-weight: $font-weight500;
+    font-size: $FontSize12;
+    line-height: $LineHeight1-67;
+    letter-spacing: 0;
+
+    @media (min-width: $tablet) {
+      padding: 30px 50px 30px 86px;
+      background-color: $background-color-garant;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 50px 112px 45px 123px;
+      font-size: $FontSize20;
+      line-height: $LineHeight1-40;
+    }
+  }
+
+  &__item {
+    padding-left: 28px;
+
+    &:not(:last-child) {
+      padding-bottom: 21px;
+      border-left: 1px dashed $gray-text;
+    }
+
+    // &::before {
+    //   content: '';
+    //   width: 22px;
+    //   height: 30px;
+    //   margin-right: 16px;
+    //   background-image: url(../images/fire2.svg);
+    // }
+  }
+  &__span {
+    color: $orange-text;
+  }
+}
