@@ -12,7 +12,37 @@
   outline: none;
   cursor: pointer;
   transition-property: background-color, border, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $duration-time;
+  transition-timing-function: $cubic-function;
   padding: 0px;
+}
+
+%transitionColor {
+  transition-property: color;
+  transition-duration: $duration-time;
+  transition-timing-function:$cubic-function;
+}
+
+%transitionFill {
+  transition-property: fill;
+  transition-duration: $duration-time;
+  transition-timing-function: $cubic-function;
+}
+
+%transitionBorder {
+  transition-property: border;
+  transition-duration: $duration-time;
+  transition-timing-function: $cubic-function;
+}
+
+%transitionBoxShadow {
+  transition-property: box-shadow;
+  transition-duration: $duration-time;
+  transition-timing-function: $cubic-function;
+}
+
+%transitionBackgrColor {
+  transition-property: background-color;
+  transition-duration: $duration-time;
+  transition-timing-function: $cubic-function;
 }

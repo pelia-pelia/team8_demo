@@ -29,7 +29,22 @@ padding-top: 42px;
 .header__button {
 display: none;
 @media screen and (min-width: $tablet) {
-// @extend %buttonMain;
+ display: inline-flex;
+ justify-content: center;
+ text-align: center;
+ align-items: center;
+ font-weight: $font-weight700;
+ font-size: $FontSize14;
+ line-height: $LineHeight1-21;
+ letter-spacing: $LetterSpacing14;
+ text-transform: uppercase;
+ border: $orange-text;
+ outline: none;
+ cursor: pointer;
+ transition-property: background-color, border, color;
+ transition-duration: 250ms;
+ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ padding: 0px;
 color: $orange-text;
 width: 336px;
 height: 70px;
@@ -39,7 +54,97 @@ border: 2px solid $orange-text;
 margin-top: 30px;
 }
 }
+// mabail menu
+.menu-container--mobile {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: $black-text;
+  transform: translateX(100%);
+}
 
+.menu-container.is-open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding: 2.9em 2em;
+  overflow: auto;
+  transform: translateX(0);
+
+  @media (min-width: $phone) {
+    padding: 48px 40px;
+  }
+}
 .mobile__menu {
   display: flex;
+  overflow-y: scroll;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 8px;
+  right: 13px;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  border-bottom: none;
+  cursor: pointer;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  @extend%transitionFill;
+  ;
+
+  & :hover {
+    fill: var(--accent-color);
+  }
+
+  &:focus-within {
+    fill: var(--accent-color);
+  }
+
+  @media (min-width: 480px) {
+    padding-top: 10px;
+  }
+
+  @media (min-width: 767px) {
+    display: none;
+  }
+}
+
+.heder__icon--open {
+  fill: var(--title-text-color);
+  @extend %transitionFill;
+
+  & :hover {
+    fill: var(--accent-color);
+  }
+
+  &:focus-within {
+    fill: var(--accent-color);
+  }
+}
+
+.heder__icon--close {
+  left: 27.5%;
+  right: 25.83%;
+  top: 27.5%;
+  bottom: 25.83%;
+  fill: var(--title-text-color);
+  @extend %transitionFill;
+
+  & :hover {
+    fill: var(--accent-color);
+  }
+
+  &:focus-within {
+    fill: var(--accent-color);
+  }
 }
