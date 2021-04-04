@@ -1,0 +1,47 @@
+.header__logo {
+  display: block;
+}
+
+.header__logo--link {
+  display: flex;
+}
+
+.logo__title {
+  font-weight: $font-weight800;
+  font-size: $FontSize26;
+  line-height: $LineHeight1-23;
+  letter-spacing: $LetterSpacing04;
+  color: $black-text;
+}
+
+.logo__title--letter {
+  @media screen and (min-width: $desktop) {
+    &::first-letter {
+      border-bottom: 1px dashed $black-text;
+    }
+  }
+}
+
+.logo__icone {
+  fill: $orange-text;
+}
+
+.logo__text {
+  font-weight: $font-weight700;
+  font-size: $FontSize8;
+  line-height: $LineHeight1-25;
+  letter-spacing: $LetterSpacing18;
+  text-transform: uppercase;
+  color: $black-text;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.logo__text--accent {
+  @media screen and (min-width: $tablet) {
+    color: $orange-text;
+
+  }
+}

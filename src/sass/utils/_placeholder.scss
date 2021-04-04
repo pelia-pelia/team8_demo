@@ -1,0 +1,18 @@
+  %buttonMain {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-weight: $font-weight700;
+  font-size: $FontSize14;
+  line-height: $LineHeight1-21;
+  letter-spacing: $LetterSpacing14;
+  text-transform: uppercase;
+  border: $orange-text;
+  outline: none;
+  cursor: pointer;
+  transition-property: background-color, border, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0px;
+}
