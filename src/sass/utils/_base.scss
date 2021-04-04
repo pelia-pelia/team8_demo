@@ -13,17 +13,22 @@ body {
   max-width: 1316px;
   margin-left: auto;
   margin-right: auto;
-
+  padding-left: 20px;
+  padding-right: 20px;
   @media screen and (min-width: 480px) {
-    width: $phone;
+    width: $phone; 
   }
 
   @media screen and (min-width: 768px) {
     width: $tablet;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   @media screen and (min-width: 1280px) {
     width: $desktop;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
