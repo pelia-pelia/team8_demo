@@ -15,12 +15,21 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: $tablet) {
-        flex-direction: row;
-    }
-
     padding-left: 52px;
     padding-right: 52px;
+
+    @media (min-width: $tablet) {
+        flex-direction: row;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media (min-width: $desktop) {
+        justify-content: space-evenly;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
 
 .list__item {
@@ -32,6 +41,7 @@
 
     @media (min-width: $desktop) {
         margin: 0;
+        font-size: $FontSize20;
     }
 }
 
@@ -56,5 +66,7 @@
 
     @media (min-width: $desktop) {
         margin-right: 0;
+        height: 102px;
+        width: 100px;
     }
 }

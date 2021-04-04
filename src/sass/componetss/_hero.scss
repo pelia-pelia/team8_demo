@@ -1,0 +1,53 @@
+.hero {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero__title {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-weight: $font-weight800;
+    font-size: $FontSize20;
+}
+
+.hero__text {
+    margin: 0;
+
+    font-weight: $font-weight500;
+    font-size: $FontSize14;
+    line-height: 22px;
+    letter-spacing: $LetterSpacing08;
+
+    &--light {
+        color: $gray-text;
+    }
+
+    &--dark {
+        color: $black-text;
+        font-weight: bold;
+    }
+    
+    &--orange {
+        color: $orange-text;
+        font-weight: bold;
+    }
+}
+
+.hero__button {
+    margin-top: 30px;
+    width: 260px;
+    height: 48px;
+
+    
+    color: $white-text;
+    background-color: $orange-text;
+    border: none;
+
+    font-weight: $font-weight700;
+    font-size: 12px;
+    letter-spacing: $LetterSpacing08;
+
+    cursor: pointer;
+}
