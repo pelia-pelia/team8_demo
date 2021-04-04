@@ -1,0 +1,82 @@
+.problems__container {
+  background-color: $background-mobile-menu;
+  background-image: linear-gradient(to bottom, $background-mobile-menu 545px, $white-text 128px);
+  border: none;
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(to bottom, $background-mobile-menu 340px, $white-text 256px);
+    border: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(to bottom, $background-mobile-menu 560px, $white-text 150px);
+  }
+}
+
+.problems__title {
+  font-weight: $font-weight800;
+  font-size: $FontSize20;
+  line-height: $LineHeight1-36;
+  color: $white-text;
+  letter-spacing: $LetterSpacing03;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 49.5px;
+  padding-top: 50px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 42px;
+    width: 568px;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.problems_title--orange {
+  color: $orange-text;
+}
+
+.problems__list {
+  list-style: none;
+  counter-reset: problems__counter;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: $FontSize14;
+  line-height: $LineHeight1-71;
+  letter-spacing: $LetterSpacing08;
+  background-color: $white-text;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 27px;
+  padding-top: 20px;
+  border: none;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 25px;
+    padding-top: 25px;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 183px;
+    margin-right: 183px;
+    padding-top: 70px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+.problems__item::before {
+  counter-increment: problems__counter;
+  content: counter(problems__counter);
+  color: $orange-text;
+}
+
+.problems__item {
+  margin-left: 30px;
+  width: 236px;
+}
