@@ -1,8 +1,8 @@
-.header__logo {
+.logo {
   display: block;
 }
 
-.header__logo--link {
+.logo--link {
   display: flex;
   margin-bottom: 3px;
  
@@ -25,14 +25,9 @@
   }
 }
 
-.header__icon--logo {
-  // max-width: 14px;
-  // max-height: 20px;
-  fill: $orange-text;
-  @media screen and (min-width: $tablet){
-    //  max-width: 22px;
-    //  max-height: 30px;
-  }
+.icon--logo {
+fill: $orange-text;
+ 
   
 }
 
