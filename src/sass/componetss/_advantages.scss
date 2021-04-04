@@ -1,21 +1,60 @@
+.advantages {
+    padding-top: 77px;
+    padding-bottom: 50px;
+
+    @media (min-width: $tablet) {
+        padding-top: 114px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 107px;
+        padding-bottom: 130px;
+    }
+}
 .list {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet) {
+        flex-direction: row;
+    }
+
     padding-left: 52px;
     padding-right: 52px;
 }
 
 .list__item {
+    display: inline-flex;
+    align-items: center;
     font-weight: $font-weight700;
     letter-spacing: $LetterSpacing08;
-    line-height: $LineHeight2-00;
     font-size: $FontSize14;
+
+    @media (min-width: $desktop) {
+        margin: 0;
+    }
 }
 
 .list__item:not(:last-child) {
     margin-bottom: 30px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 0;
+        margin-right: 21px;
+    }
+
+    @media (min-width: $desktop) {
+    }
 }
 
 .list__text {
     margin: 0;
-    padding: 0;
 }
 
+.list__image {
+    margin-right: 10px;
+
+    @media (min-width: $desktop) {
+        margin-right: 0;
+    }
+}
