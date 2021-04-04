@@ -58,6 +58,7 @@ padding: 0;
 }
 @media screen and (min-width: $tablet){
 margin-top: 30px;
+margin-right: 65px;
 }
 }
 // mabail menu
@@ -112,11 +113,7 @@ margin-top: 30px;
     fill: $orange-text;
   }
 
-  @media (min-width: 480px) {
-    padding-top: 10px;
-  }
-
-  @media (min-width: 767px) {
+  @media (min-width: $desktop) {
     display: none;
   }
 }
