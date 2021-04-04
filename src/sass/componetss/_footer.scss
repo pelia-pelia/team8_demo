@@ -1,0 +1,139 @@
+.footer {
+  &__container {
+    text-align: center;
+    padding-top: 30px;
+
+    @media (min-width: $tablet) {
+      padding-top: 40px;
+      text-align: left;
+    }
+  }
+
+  &__contact {
+    @media (min-width: $tablet) {
+      display: flex;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__logo-name {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo-icon {
+    display: inline-flex;
+  }
+
+  &__logo-text {
+    font-weight: $font-weight800;
+    font-size: $FontSize26;
+    line-height: $LineHeight1-23;
+    letter-spacing: $LetterSpacing04;
+    color: $black-text;
+  }
+
+  &__logo-subtext {
+    margin: 0;
+    margin-top: 3px;
+    font-weight: $font-weight700;
+    font-size: $FontSize8;
+    line-height: $LineHeight1-25;
+    letter-spacing: $LetterSpacing18;
+    text-transform: uppercase;
+    color: $black-text;
+  }
+
+  &__tel-icon {
+    fill: $orange-text;
+  }
+
+  &__logo-icon {
+    fill: $orange-text;
+  }
+
+  &__tel {
+    margin-top: 21px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: $font-weight600;
+    font-size: $FontSize14;
+    line-height: $LineHeight1-22;
+    letter-spacing: $LetterSpacing08;
+    color: $black-text;
+
+    @media (min-width: $tablet) {
+      margin-top: 0;
+      margin-left: auto;
+      padding-right: 24px;
+      font-size: $FontSize20;
+      line-height: $LineHeight1-20;
+      border-right: 1px solid $gray-text;
+    }
+
+    @media (min-width: $desktop) {
+      padding-right: 16px;
+      margin-left: 290px;
+      font-size: $FontSize30;
+      line-height: $LineHeight1-22;
+    }
+  }
+
+  &__tel-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+
+    @media (min-width: $tablet) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-right: 15px;
+      width: 30px;
+      height: 29px;
+    }
+  }
+
+  &__social {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+    height: 40px;
+    background-image: url(/images/instagram.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet) {
+      margin-top: 0;
+      display: inline-flex;
+      margin-left: 24px;
+      margin-right: 0;
+    }
+  }
+
+  &__protection {
+    margin: 0;
+    margin-top: 30px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    font-weight: $font-weight500;
+    font-size: $FontSize14;
+    line-height: $LineHeight2-00;
+    color: $gray-text;
+    background-color: $black-text;
+
+    @media (min-width: $tablet) {
+      text-align: left;
+      padding-left: 40px;
+    }
+  }
+}
