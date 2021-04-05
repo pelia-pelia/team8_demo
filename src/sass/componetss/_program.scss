@@ -1,0 +1,74 @@
+.program {
+  background-color: $black-text;
+}
+
+.program__header {
+  font-weight: $font-weight800;
+  font-size: $FontSize20;
+  line-height: $LineHeight1-26;
+  letter-spacing: $LetterSpacing03;
+  color: #fff;
+
+  text-align: center;
+}
+
+.program__list {
+  position: relative;
+  left: 30%;
+  margin-top: 43px;
+  padding-left: 20px;
+  color: $gray-text;
+}
+
+.border-left {
+  position: absolute;
+  top: 8px;
+  left: -1px;
+  bottom: 90px;
+  border-left: 1px solid $white-text;
+}
+
+.program-sublist__header {
+  color: $orange-text;
+  font-weight: $font-weight700;
+  font-size: $FontSize12;
+  letter-spacing: $LetterSpacing08;
+}
+
+.program-sublist__header::before {
+  content: '—';
+}
+
+.program-list__sublist::before {
+  counter-increment: section;
+  content: counter(section) ' ' ' Семестр';
+
+  font-weight: $font-weight700;
+  font-size: $FontSize14;
+  line-height: $LineHeight2-00;
+  letter-spacing: $LetterSpacing08;
+  text-transform: uppercase;
+  color: $white-text;
+}
+
+.program-sublist__text {
+  font-weight: $font-weight500;
+  font-size: $FontSize12;
+  line-height: $LineHeight1-67;
+  letter-spacing: $LetterSpacing08;
+}
+
+.program-list__item {
+  position: relative;
+}
+
+.program-list__item::before {
+  content: '';
+  position: absolute;
+  left: -26px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $orange-text;
+}
