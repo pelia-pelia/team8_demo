@@ -1,9 +1,10 @@
 @import './utils/variables';
+@import'./utils/mixin';
 @import './utils/placeholder';
 @import './utils/base';
 @import './componetss/header';
 @import './componetss/logo';
-@import './componetss/_phonemenu';
+@import './componetss/phone-menu';
 @import './componetss/hero';
 @import './componetss/advantages';
 @import './componetss/footer';
