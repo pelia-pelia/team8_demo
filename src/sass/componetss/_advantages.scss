@@ -1,6 +1,5 @@
 .advantages {
     padding-top: 77px;
-    padding-bottom: 50px;
 
     @media (min-width: $tablet) {
         padding-top: 114px;
@@ -11,6 +10,7 @@
         padding-bottom: 130px;
     }
 }
+
 .list {
     display: flex;
     flex-direction: column;
@@ -20,8 +20,6 @@
 
     @media (min-width: $tablet) {
         flex-direction: row;
-        padding-left: 40px;
-        padding-right: 40px;
     }
 
     @media (min-width: $desktop) {
@@ -33,16 +31,21 @@
 }
 
 .list__item {
+    position: relative;
     display: inline-flex;
     align-items: center;
     font-weight: $font-weight700;
     letter-spacing: $LetterSpacing08;
     font-size: $FontSize14;
 
+    @media (min-width: $tablet) {
+    }
+
     @media (min-width: $desktop) {
         margin: 0;
         font-size: $FontSize20;
     }
+    
 }
 
 .list__item:not(:last-child) {
@@ -50,7 +53,6 @@
 
     @media (min-width: $tablet) {
         margin-bottom: 0;
-        margin-right: 21px;
     }
 
     @media (min-width: $desktop) {
@@ -59,14 +61,51 @@
 
 .list__text {
     margin: 0;
+    position: absolute;
+    left: 68px;
+    @media (min-width: $desktop) {
+        left: 80px;
+    }
 }
 
-.list__image {
-    margin-right: 10px;
+.list__item--female::before {
+    content: "";
+    background-image: url(/images/female.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 61px;
+    height: 63px;
 
     @media (min-width: $desktop) {
-        margin-right: 0;
-        height: 102px;
         width: 100px;
+        height: 102px;
+    }
+}
+
+.list__item--lecturer::before {
+    content: "";
+    background-image: url(/images/lecturer.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 61px;
+    height: 63px;
+
+    @media (min-width: $desktop) {
+        width: 100px;
+        height: 102px;
+    }
+}
+
+.list__item--insurance::before {
+    content: "";
+    background-image: url(/images/insurance.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 61px;
+    height: 63px;
+
+    @media (min-width: $desktop) {
+        width: 100px;
+        height: 102px;
     }
 }
