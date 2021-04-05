@@ -1,0 +1,164 @@
+.contacts {
+  background-image: url(/images/background-contacts-mobile.png);
+  background-color: $black-text;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/background-contacts-mobile@2x.png);
+  }
+
+  @media (min-width: $tablet) {
+    background-image: url(/images/background-contacts-tablet.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/background-contacts-tablet@2x.png);
+    }
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url(/images/background-contacts-desktop.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/background-contacts-desktop@2x.png);
+    }
+  }
+
+  &__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 70px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-top: 100px;
+      padding-bottom: 62px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    text-align: center;
+    font-weight: $font-weight800;
+    font-size: $FontSize14;
+    line-height: $LineHeight1-22;
+    letter-spacing: $LetterSpacing03;
+    color: $white-text;
+
+    @media (min-width: $tablet) {
+      width: 688px;
+      font-size: $FontSize26;
+      line-height: $LineHeight1-30;
+    }
+
+    @media (min-width: $desktop) {
+      width: 1090px;
+      font-size: $FontSize46;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: $font-weight600;
+    font-size: $FontSize12;
+    line-height: $LineHeight1-22;
+    letter-spacing: $LetterSpacing03;
+    color: $white-text;
+
+    @media (min-width: $tablet) {
+      width: 452px;
+      font-size: $FontSize14;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 50px;
+      width: 770px;
+      font-size: $FontSize30;
+    }
+  }
+
+  &__subtitle--orange,
+  &__title--orange {
+    color: $orange-text;
+  }
+}
+
+.form {
+  margin-top: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 56px;
+  }
+
+  &__tel {
+    margin-top: 20px;
+
+    @media (min-width: $desktop) {
+      margin-top: 30px;
+    }
+  }
+
+  &__input {
+    outline: none;
+    padding-left: 28px;
+    width: 280px;
+    height: 48px;
+    border: 1px solid $white-text;
+    background: transparent;
+
+    @media (min-width: $tablet) {
+      width: 390px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 478px;
+    }
+  }
+  &__input::placeholder {
+    color: $white-text;
+  }
+
+  &__input:valid {
+    border-color: $form-valid;
+  }
+
+  &__input:invalid {
+    border-color: $form-invalid;
+  }
+
+  &__input:not(:focus):invalid {
+    border-color: $white-text;
+  }
+
+  &__button {
+    margin-top: 50px;
+    width: 260px;
+    height: 48px;
+    color: $white-text;
+    background-color: $orange-text;
+
+    @media (min-width: $tablet) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 80px;
+    }
+  }
+}
