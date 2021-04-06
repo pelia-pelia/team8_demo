@@ -46,3 +46,17 @@
    transition-timing-function: $cubic-function;
    padding: 0px;
  }
+ 
+ @mixin Title {
+  font-weight: $font-weight800;
+  font-size: $FontSize20;
+  line-height: $LineHeight1-30;
+  letter-spacing: $LetterSpacing03;
+  @media screen and (min-width: $tablet) {
+    font-size: $FontSize26;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: $FontSize46;
+  }
+}

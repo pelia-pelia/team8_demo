@@ -28,8 +28,8 @@ body {
 
   @media screen and (min-width: 1280px) {
     width: 1315px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -44,10 +44,14 @@ ol {
   padding: 0;
 }
 
-a {
+a,
+ {
   text-decoration: none;
   color: currentColor;
   cursor: pointer;
+}
+link{
+ text-decoration: none;
 }
 
 p {
@@ -66,6 +70,11 @@ svg {
   height: auto;
 }
 
+h2,
+h3
+ {
+  margin: 0;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
