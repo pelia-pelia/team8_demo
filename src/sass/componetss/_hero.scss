@@ -1,8 +1,20 @@
 .hero {
+    height: 618px;
     padding-top: 50px;
+
     background-image: url(/images/wave.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+    @media (min-width: $tablet) {
+        padding-top: 72px;
+        height: 557px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 138px;
+        height: 887px;
+    }
 }
 
 .hero__title {
@@ -17,6 +29,11 @@
     @media(min-width: $tablet) {
         font-size: $FontSize26;
         line-height: 34px;
+        width: 332px;
+    }
+
+    @media(min-width: $desktop) {
+        width: 642px;
     }
 }
 
@@ -79,4 +96,90 @@
         border: 2px solid $orange-text;
         background-color: white;
     }
+}
+
+.image__mobile {
+    position: relative;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+}
+
+.image_mobile--main {
+    position: absolute;
+    top: -10px;
+    left: 35px;
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
+    
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.image_mobile--bg {
+    @media (min-width: $tablet) {
+        display: none;
+    }
+    
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.image__tablet {
+    position: relative;
+}
+
+.image_tablet--bg {
+    position: absolute;
+    top: 190px;
+    left: 374px;
+    display: none;
+
+    @media (min-width: $tablet) {
+        display: block;
+    }
+    
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.image_tablet--main {
+    position: absolute;
+    top: 172px;
+    left: 410px;
+    display: none;
+
+    @media (min-width: $tablet) {
+        display: block;
+    }
+    
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.image_desktop--bg {
+    @media (max-width: 1279px) {
+        display: none;
+    }
+
+    position: absolute;
+    top: 188px;
+    left: 794px;
+}
+
+.image_desktop--main {
+    @media (max-width: 1279px) {
+        display: none;
+    }
+
+    position: absolute;
+    top: 150px;
+    left: 875px;
 }
