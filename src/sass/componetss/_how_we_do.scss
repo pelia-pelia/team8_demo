@@ -1,0 +1,185 @@
+.how__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 480px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1280px;
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
+.how__title {
+  font-weight: $font-weight800;
+  font-size: $FontSize20;
+  line-height: $LineHeight1-30;
+  letter-spacing: $LetterSpacing03;
+  text-align: center;
+  margin: 0;
+
+  @media screen and (min-width: $desktop) {
+    font-size: $FontSize46;
+    text-align: initial;
+  }
+}
+
+.how__card-set {
+  @media (min-width: 320px) {
+    // align-items: center;
+    // width: 480px;
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: 30px; */
+    margin-left: -20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-top: 30px;
+  }
+}
+
+.how__item {
+  background: $white-text;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 280px;
+    margin-top: 15px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 334px;
+    flex-basis: calc((100% - 40px) / 2);
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+
+    width: 425px;
+    flex-basis: calc((100% - 60px) / 3);
+    margin-left: 20px;
+  }
+
+  &:focus,
+  &:hover {
+    background: $orange-text;
+  }
+
+  &:focus .how__svg,
+  &:hover .how__svg {
+    fill: $white-text;
+  }
+
+  &:focus .how__card-heading,
+  &:hover .how__card-heading {
+    color: $white-text;
+  }
+
+  &:focus .how__card-heading::after,
+  &:hover .how__card-heading::after {
+    background-color: $white-text;
+  }
+
+  &:focus .how__text,
+  &:hover .how__text {
+    color: $white-text;
+  }
+
+  transition-property: background-color;
+  transition-duration: $duration-time;
+  transition-timing-function: $cubic-function;
+}
+
+.how__tumb {
+  justify-content: center;
+  padding: 30px 115px 0 120px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 40px 138px 10px 138px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 40px 184px 10px 184px;
+  }
+}
+
+.how__svg {
+  fill: $orange-text;
+}
+
+.how__card-heading {
+  width: 280px;
+  font-style: normal;
+  font-weight: $font-weight700;
+  font-size: $FontSize14;
+  line-height: 20px;
+  position: relative;
+  padding-bottom: 10px;
+
+  text-align: center;
+
+  &::after {
+    content: '';
+    display: flex;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    bottom: -25%;
+    left: 47%;
+    background-color: $orange-text;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 293px;
+    padding-bottom: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: $FontSize20;
+    line-height: 28px;
+    width: 365px;
+    padding-bottom: 10px;
+  }
+}
+
+.how__text {
+  font-weight: $font-weight500;
+  font-size: 12px;
+  line-height: 20px;
+  color: $gray-text;
+
+  padding: 15px 11px 22px 11px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: $FontSize20;
+    line-height: 28px;
+  }
+}

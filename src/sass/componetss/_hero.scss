@@ -1,7 +1,8 @@
 .hero {
     padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    background-image: url(/images/wave.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .hero__title {
@@ -10,6 +11,13 @@
 
     font-weight: $font-weight800;
     font-size: $FontSize20;
+    line-height: 27px;
+    letter-spacing: $LetterSpacing03;
+
+    @media(min-width: $tablet) {
+        font-size: $FontSize26;
+        line-height: 34px;
+    }
 }
 
 .hero__text {
@@ -33,10 +41,16 @@
         color: $orange-text;
         font-weight: bold;
     }
+
+    @media(min-width: $desktop) {
+        font-size: $FontSize20;
+        line-height: 33px;
+    }
 }
 
 .hero__button {
     margin-top: 30px;
+    margin-bottom: 30px;
     width: 260px;
     height: 48px;
 
@@ -46,8 +60,23 @@
     border: none;
 
     font-weight: $font-weight700;
-    font-size: 12px;
+    font-size: $FontSize12;
     letter-spacing: $LetterSpacing08;
+    text-transform: uppercase;
 
     cursor: pointer;
+
+    @media(min-width: $desktop) {
+        width: 354px;
+        height: 70px;
+        font-size: $FontSize14;
+        letter-spacing: $LetterSpacing14;
+    }
+
+    &:hover,
+    &:focus {
+        color: $orange-text;
+        border: 2px solid $orange-text;
+        background-color: white;
+    }
 }
