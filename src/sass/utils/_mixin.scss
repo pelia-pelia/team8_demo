@@ -1,0 +1,48 @@
+ @mixin transitionFill () {
+   transition-property: fill;
+   transition-duration: $duration-time;
+   transition-timing-function: $cubic-function;
+ }
+
+ @mixin transitionBorder () {
+   transition-property: border;
+   transition-duration: $duration-time;
+   transition-timing-function: $cubic-function;
+ }
+
+ @mixin transitionBoxShadow () {
+   transition-property: box-shadow;
+   transition-duration: $duration-time;
+   transition-timing-function: $cubic-function;
+ }
+
+ @mixin transitionBackgrColor () {
+   transition-property: background-color;
+   transition-duration: $duration-time;
+   transition-timing-function: $cubic-function;
+ }
+
+ @mixin transitionColor () {
+   transition-property: color;
+   transition-duration: $duration-time;
+   transition-timing-function: $cubic-function;
+ }
+
+ @mixin buttonMain () {
+   display: inline-flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   font-weight: $font-weight700;
+   font-size: $FontSize14;
+   line-height: $LineHeight1-21;
+   letter-spacing: $LetterSpacing14;
+   text-transform: uppercase;
+   border: $orange-text;
+   outline: none;
+   cursor: pointer;
+   transition-property: background-color, border, color;
+   transition-duration: $duration-time;
+   transition-timing-function: $cubic-function;
+   padding: 0px;
+ }

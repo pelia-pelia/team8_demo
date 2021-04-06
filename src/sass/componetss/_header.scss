@@ -41,41 +41,58 @@ display: none;
 }
 
 .header__link {
-    display: inline-flex;
-    padding-top: 57px;
-    margin-right: 154px;
-    @media screen and (min-width: $desktop) {
-      margin-right: 0px;
-      padding-top: 30px;
-    }
+display: inline-flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+font-weight: $font-weight700;
+font-size: $FontSize14;
+line-height: $LineHeight1-21;
+letter-spacing: $LetterSpacing03;
+color: $gray-text;
+padding-top: 57px;
+margin-right: 154px;
+@media screen and (min-width: $desktop) {
+  margin-right: 0px;
+  padding-top: 30px;
+@include transitionColor();
+&:hover,
+&:focus {
+color: $orange-text;
+transition: transform 250ms $cubic-function,
+opacity 250ms $cubic-function;
+}
+}
+}
+
+.header__link--current {
+  color: $orange-text;
+  transition: transform 250ms $cubic-function,
+  opacity 250ms $cubic-function;
+
 }
 
 .header__button {
 display: none;
 @media screen and (min-width: $tablet) {
- display: inline-flex;
- justify-content: center;
- text-align: center;
- align-items: center;
- font-weight: $font-weight700;
- font-size: $FontSize12;
- line-height: $LineHeight1-25;
- letter-spacing: $LetterSpacing08;
- text-transform: uppercase;
- border: $orange-text;
- outline: none;
- cursor: pointer;
- transition-property: background-color, border, color;
- transition-duration: 250ms;
- transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- color: $orange-text;
- background-color: inherit;
- width: 260px;
- height: 48px;
- border: 2px solid $orange-text;
- padding: 0;
- margin-top: 38px;
- margin-right: 61px;
+  @include buttonMain ();
+font-weight: $font-weight700;
+font-size: $FontSize12;
+line-height: $LineHeight1-25;
+letter-spacing: $LetterSpacing08;
+color: $orange-text;
+background-color: inherit;
+width: 260px;
+height: 48px;
+border: 2px solid $orange-text;
+padding: 0;
+margin-top: 38px;
+margin-right: 61px;
+ &:hover,
+ &:focus {
+   color: $white-text;
+   background-color: $orange-text;
+ }
 }
 @media screen and (min-width: $desktop){
 font-size: $FontSize14;
@@ -87,4 +104,3 @@ margin-top: 30px;
 margin-right: 0;
 }
 }
-
