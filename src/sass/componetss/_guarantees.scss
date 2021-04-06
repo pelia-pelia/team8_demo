@@ -45,19 +45,39 @@
 
   &__item {
     padding-left: 28px;
+    position: relative;
 
     &:not(:last-child) {
-      padding-bottom: 21px;
+      margin-bottom: 5px;
+      padding-bottom: 18px;
       border-left: 1px dashed $gray-text;
+
+      @media (min-width: $tablet) {
+        margin-bottom: 4px;
+        padding-bottom: 16px;
+      }
+
+      @media (min-width: $desktop) {
+        margin-bottom: 6px;
+        padding-bottom: 14px;
+      }
     }
 
-    // &::before {
-    //   content: '';
-    //   width: 22px;
-    //   height: 30px;
-    //   margin-right: 16px;
-    //   background-image: url(../images/fire2.svg);
-    // }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      transform: translatex(-50%);
+      width: 15px;
+      height: 25px;
+      background-color: $background-color-garant;
+      background-image: url(../images/fire2.svg);
+      background-repeat: no-repeat;
+      @media (min-width: $desktop) {
+        width: 22px;
+        height: 34px;
+      }
+    }
   }
   &__span {
     color: $orange-text;
