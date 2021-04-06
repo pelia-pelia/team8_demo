@@ -1,5 +1,18 @@
 .program {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: $black-text;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 189px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 184px;
+    padding-top: 120px;
+    padding-bottom: 164px;
+  }
 }
 
 .program__header {
@@ -10,6 +23,17 @@
   color: #fff;
 
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    font-size: $FontSize26;
+    line-height: $LineHeight1-30;
+
+    text-align: left;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: $FontSize46;
+  }
 }
 
 .program__list {
@@ -18,48 +42,56 @@
   margin-top: 43px;
   padding-left: 20px;
   color: $gray-text;
+
+  @media screen and (min-width: $tablet) {
+    left: 10%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    left: 0;
+    padding-left: 0;
+  }
 }
 
 .border-left {
-  position: absolute;
-  top: 8px;
-  left: -1px;
-  bottom: 90px;
-  border-left: 1px solid $white-text;
-}
+  @media screen and (min-width: 320px) and (max-width: 1279px) {
+    position: absolute;
+    top: 9px;
+    left: -1px;
+    bottom: 90px;
+    border-left: 1px solid $white-text;
+  }
 
-.program-sublist__header {
-  color: $orange-text;
-  font-weight: $font-weight700;
-  font-size: $FontSize12;
-  letter-spacing: $LetterSpacing08;
-}
-
-.program-sublist__header::before {
-  content: '—';
-}
-
-.program-list__sublist::before {
-  counter-increment: section;
-  content: counter(section) ' ' ' Семестр';
-
-  font-weight: $font-weight700;
-  font-size: $FontSize14;
-  line-height: $LineHeight2-00;
-  letter-spacing: $LetterSpacing08;
-  text-transform: uppercase;
-  color: $white-text;
-}
-
-.program-sublist__text {
-  font-weight: $font-weight500;
-  font-size: $FontSize12;
-  line-height: $LineHeight1-67;
-  letter-spacing: $LetterSpacing08;
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    left: -400px;
+    right: -150px;
+    min-width: 1685px;
+    border-top: 1px solid $white-text;
+  }
 }
 
 .program-list__item {
   position: relative;
+  margin-top: 30px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 60px;
+  }
+}
+
+.program-list__item + .program-list__item {
+  @media screen and (min-width: $desktop) {
+    margin-left: 30px;
+  }
 }
 
 .program-list__item::before {
@@ -71,4 +103,113 @@
   height: 12px;
   border-radius: 50%;
   background-color: $orange-text;
+
+  @media screen and (min-width: $tablet) {
+    left: -76px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: -66px;
+    left: 0;
+  }
+}
+
+.program-sublist__header {
+  margin-top: 5px;
+  color: $orange-text;
+  font-weight: $font-weight700;
+  font-size: $FontSize12;
+  letter-spacing: $LetterSpacing08;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 25px;
+    font-size: $FontSize20;
+    line-height: $LineHeight1-65;
+  }
+}
+
+.program-sublist__header::before {
+  content: '—';
+}
+
+.program-list__sublist {
+  margin-top: 5px;
+
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    display: flex;
+  }
+}
+
+.program-list__before::before {
+  counter-increment: section;
+  content: counter(section) ' ' ' Семестр';
+
+  font-weight: $font-weight700;
+  font-size: $FontSize14;
+  line-height: $LineHeight2-00;
+  letter-spacing: $LetterSpacing08;
+  text-transform: uppercase;
+  color: $white-text;
+
+  @media screen and (min-width: $desktop) {
+    font-size: $FontSize20;
+    line-height: $LineHeight1-40;
+  }
+}
+
+.program-sublist__text {
+  margin-top: 5px;
+  font-weight: $font-weight500;
+  font-size: $FontSize12;
+  line-height: $LineHeight1-67;
+  letter-spacing: $LetterSpacing08;
+  color: rgba(185, 185, 185, 0.5);
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 10px;
+
+    font-size: $FontSize18;
+    line-height: $LineHeight1-56;
+  }
+}
+
+.program-sublist__item {
+  width: 176px;
+
+  @media screen and (min-width: $desktop) {
+    width: 240px;
+  }
+}
+
+.program-sublist__item:not(:first-child) {
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    margin-left: 50px;
+  }
+}
+
+.program__list::after {
+  position: absolute;
+  content: '';
+  min-width: 176px;
+  min-height: 137px;
+  left: calc(100% - 65%);
+  top: calc(100% - 3%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url('./../images/program-section.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: $tablet) {
+    min-width: 384px;
+    min-height: 280px;
+    left: calc(100% - 64%);
+    top: calc(100% - 17%);
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 760px;
+    min-height: 502px;
+    left: -17%;
+    top: 65%;
+  }
 }
