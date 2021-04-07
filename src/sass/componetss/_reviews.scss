@@ -1,10 +1,17 @@
 .reviews {
-  padding-top: 50px;
+  padding: 50px 0;
+
+  @media (min-width: $desktop) {
+    padding: 130px 0;
+  }
 
   &__container {
     position: relative;
-  }
 
+    @media (min-width: $desktop) {
+      padding: 0 112px;
+    }
+  }
   &__title {
     margin: 0;
     text-align: center;
@@ -29,11 +36,27 @@
     bottom: 27px;
     transform: translateY(50%);
 
+    @media (min-width: $tablet) {
+      bottom: 186px;
+      transform: translateY(-50%);
+    }
+
+    @media (min-width: $desktop) {
+      bottom: 272px;
+      transform: translateY(50%);
+    }
+
     &--right {
       right: 20px;
+      @media (min-width: $desktop) {
+        right: 28px;
+      }
     }
     &--left {
       left: 20px;
+      @media (min-width: $desktop) {
+        left: 28px;
+      }
     }
   }
 }
@@ -43,6 +66,25 @@
   padding: 20px 20px 30px;
   box-shadow: $box-shadow;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    text-align: left;
+    padding: 40px;
+
+    &__left-part {
+      flex-basis: 1000px;
+      margin-right: 46px;
+
+      @media (min-width: $desktop) {
+        flex-basis: 849px;
+        margin-right: 40px;
+      }
+    }
+    &__right-part {
+      flex-grow: 1;
+    }
+  }
 
   &__img {
     margin-left: auto;
@@ -61,6 +103,15 @@
     line-height: $LineHeight1-21;
     letter-spacing: $LetterSpacing08;
     color: $orange-text;
+
+    @media (min-width: $tablet) {
+      margin: 0px;
+      font-size: $FontSize20;
+    }
+    @media (min-width: $desktop) {
+      font-size: $FontSize30;
+      line-height: $LineHeight1-23;
+    }
   }
   &__study {
     margin: 10px 0 0 0;
@@ -69,6 +120,11 @@
     line-height: $LineHeight1-25;
     letter-spacing: $LetterSpacing08;
     color: $gray-text;
+
+    @media (min-width: $desktop) {
+      font-size: $FontSize14;
+      line-height: $LineHeight1-21;
+    }
   }
   &__description {
     margin: 10px 0 0 0;
@@ -76,15 +132,18 @@
     font-size: $FontSize12;
     line-height: $LineHeight1-67;
     letter-spacing: 0;
+
+    @media (min-width: $desktop) {
+      font-size: $FontSize18;
+      line-height: $LineHeight1-56;
+    }
   }
   &__link {
-    margin: 0 auto;
-    font-weight: $font-weight500;
-    font-size: $FontSize12;
-    line-height: $LineHeight1-67;
-    letter-spacing: 0;
     color: $orange-text;
     text-decoration: underline;
+  }
+  @media (min-width: $desktop) {
+    padding: 50px 112px 51px 82px;
   }
 }
 .reviewers {
@@ -92,12 +151,26 @@
   display: flex;
   justify-content: center;
 
+  @media (min-width: $tablet) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 40px;
+  }
+
   &__item {
     margin: 0 5px;
+    @media (min-width: $tablet) {
+      margin: 0 15px;
+    }
   }
 
   &__item:nth-child(n + 4) {
     display: none;
+    @media (min-width: $tablet) {
+      display: block;
+    }
   }
 
   &__img {
