@@ -18,6 +18,7 @@
 
 .problems__title {
   width: 280px;
+  padding-top: 50px;
   font-weight: $font-weight800;
   font-size: $FontSize20;
   line-height: $LineHeight1-36;
@@ -34,9 +35,8 @@
   @media screen and (min-width: $desktop) {
     width: 1280px;
     padding-top: 100px;
-    padding-bottom: 70px;
-    margin-left: 163px;
-    margin-right: 163px;
+    font-size: $FontSize46;
+    line-height: $LineHeight1-30;
   }
 }
 
@@ -45,18 +45,17 @@
 }
 
 .problems__list {
-  counter-reset: section;
+  // counter-reset: section;
   // width: 280px;
 
   list-style: none;
-  counter-reset: problems__counter;
-  display: flex;
-  flex-direction: column;
+  // counter-reset: problems__counter;
+  // display: flex;
+  // flex-direction: column;
   font-weight: $font-weight700;
   font-size: $FontSize14;
   line-height: $LineHeight1-71;
   letter-spacing: $LetterSpacing08;
-  background-color: $white-text;
 
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
@@ -65,17 +64,27 @@
   border: none;
   align-items: center;
 
+  margin-top: 30px;
+  padding: 20px 45px 20px 30px;
+  list-style: none;
+  background-color: $white-text;
+  counter-reset: section;
+
   @media screen and (min-width: $tablet) {
-    margin-top: 25px;
-    width: 688px;
-    height: 303px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   @media screen and (min-width: $desktop) {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 70px;
-    //   flex-basis: calc(100% / 2 - 30px);
+    width: 1280px;
+    height: 362px;
+    margin-top: 70px;
+    // margin-top: -1px;
+    padding: 70px 112px 62px 114px;
+    position: relative;
+    top: -10px;
+    left: 0px;
   }
 }
 
@@ -95,21 +104,37 @@
 }
 
 .problems__item {
-  margin-left: 30px;
-  width: 236px;
+  min-width: 160px;
   margin-top: 10px;
 
   @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    // flex-basis: calc((100% - 44px) / 2);
-    // margin-left: 22px;
-    // margin-top: 30px;
+    flex-basis: calc(100% / 2 - 45px);
+    margin-left: 45px;
+    min-width: 200px;
   }
 
   @media screen and (min-width: $desktop) {
-    margin-top: 64px;
+    flex-basis: calc(100% / 3 - 40px);
+    margin-left: 40px;
+    margin-top: 20px;
+    min-width: 200px;
   }
+
+  // margin-left: 30px;
+  // width: 236px;
+  // margin-top: 10px;
+
+  // @media screen and (min-width: $tablet) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   // flex-basis: calc((100% - 44px) / 2);
+  //   // margin-left: 22px;
+  //   // margin-top: 30px;
+  // }
+
+  // @media screen and (min-width: $desktop) {
+  //   margin-top: 64px;
+  // }
 }
 
 .problems__item--text {
