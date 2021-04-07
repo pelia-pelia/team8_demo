@@ -51,13 +51,16 @@ max-width: 642px;
     color: $black-text;
     border-bottom: 1px solid $gray-text;
     padding-bottom: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
-
-// .about__content--list{
-//  margin-bottom: 30px;
-
-// }
+.about__content--list{
+    & :not(:last-of-type){
+    margin-bottom: 30px;
+}
+  & :last-of-type{
+      margin-bottom: 15px;
+  }
+}
 
 .about__content--item{
 font-weight: $font-weight600;
@@ -68,7 +71,6 @@ color: $black-text;
 display: flex;
 justify-content: flex-start;
 text-align: left;
-margin-bottom: 30px;
 
 }
 
@@ -99,6 +101,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap;
 white-space: -o-pre-wrap;
 word-wrap: break-word;
+margin-bottom: 20px;
 }
 
 .about__link  {
