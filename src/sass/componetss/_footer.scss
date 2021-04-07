@@ -12,8 +12,6 @@
   &__contact {
     @media (min-width: $tablet) {
       display: flex;
-      padding-left: 40px;
-      padding-right: 40px;
     }
   }
 
@@ -84,6 +82,11 @@
     }
   }
 
+  &__tel:hover,
+  &__tel:focus {
+    color: $orange-text;
+  }
+
   &__tel-icon {
     margin-right: 10px;
     width: 20px;
@@ -119,21 +122,23 @@
       margin-right: 0;
     }
   }
-
   &__protection {
-    margin: 0;
     margin-top: 30px;
+    background-color: $black-text;
+  }
+
+  &__protection-text {
+    margin: 0;
     padding-top: 21px;
     padding-bottom: 21px;
     font-weight: $font-weight500;
     font-size: $FontSize14;
     line-height: $LineHeight2-00;
     color: $gray-text;
-    background-color: $black-text;
+    text-align: center;
 
     @media (min-width: $tablet) {
       text-align: left;
-      padding-left: 40px;
     }
   }
 }
