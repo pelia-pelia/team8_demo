@@ -79,7 +79,6 @@
   @media screen and (min-width: $desktop) {
     display: flex;
 
-    width: 425px;
     flex-basis: calc((100% - 60px) / 3);
     margin-left: 20px;
   }
@@ -138,7 +137,7 @@
   font-size: $FontSize14;
   line-height: 20px;
   position: relative;
-  padding-bottom: 10px;
+  // padding-bottom: 10px;
 
   text-align: center;
 
@@ -155,7 +154,7 @@
 
   @media screen and (min-width: $tablet) {
     width: 293px;
-    padding-bottom: 10px;
+    // padding-bottom: 10px;
   }
 
   @media screen and (min-width: $desktop) {
