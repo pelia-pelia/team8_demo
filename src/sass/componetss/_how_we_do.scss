@@ -1,11 +1,11 @@
-.how__container {
+.container {
   padding-top: 50px;
   padding-bottom: 50px;
 
-  @media (min-width: 320px) and (max-width: 767px) {
-    width: 480px;
-    justify-content: center;
-  }
+  // @media (min-width: 320px) and (max-width: 767px) {
+  //   width: 480px;
+  //   justify-content: center;
+  // }
 
   @media screen and (min-width: $desktop) {
     width: 1280px;
