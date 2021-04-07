@@ -63,13 +63,24 @@
     }
   }
 
-  &__subtitle {
+  &__title--orange {
+    color: $orange-text;
+  }
+}
+
+.form {
+  margin-top: 30px;
+  text-align: center;
+
+  @media (min-width: $desktop) {
+    margin-top: 50px;
+  }
+
+  &__title {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
     width: 280px;
-    margin-top: 30px;
-    text-align: center;
     font-weight: $font-weight600;
     font-size: $FontSize12;
     line-height: $LineHeight1-22;
@@ -82,28 +93,25 @@
     }
 
     @media (min-width: $desktop) {
-      margin-top: 50px;
       width: 770px;
       font-size: $FontSize30;
     }
   }
 
-  &__subtitle--orange,
   &__title--orange {
     color: $orange-text;
   }
-}
 
-.form {
-  margin-top: 30px;
-  text-align: center;
+  &__name {
+    margin-top: 30px;
 
-  @media (min-width: $tablet) {
-    margin-top: 40px;
-  }
+    @media (min-width: $tablet) {
+      margin-top: 40px;
+    }
 
-  @media (min-width: $desktop) {
-    margin-top: 56px;
+    @media (min-width: $desktop) {
+      margin-top: 56px;
+    }
   }
 
   &__tel {
@@ -121,6 +129,7 @@
     height: 48px;
     border: 1px solid $white-text;
     background: transparent;
+    color: $white-text;
 
     @media (min-width: $tablet) {
       width: 390px;
@@ -130,6 +139,7 @@
       width: 478px;
     }
   }
+  // Валидация формы
   &__input::placeholder {
     color: $white-text;
   }
@@ -145,13 +155,19 @@
   &__input:not(:focus):invalid {
     border-color: $white-text;
   }
-
+  // Кнопка формы
   &__button {
     margin-top: 50px;
     width: 260px;
     height: 48px;
     color: $white-text;
     background-color: $orange-text;
+    border: none;
+
+    font-weight: $font-weight700;
+    font-size: $FontSize12;
+    letter-spacing: $LetterSpacing08;
+    text-transform: uppercase;
 
     @media (min-width: $tablet) {
       margin-top: 30px;
@@ -160,5 +176,12 @@
     @media (min-width: $desktop) {
       margin-top: 80px;
     }
+  }
+
+  &__button:hover,
+  &__button:focus {
+    color: $orange-text;
+    border: 2px solid $orange-text;
+    background-color: white;
   }
 }
