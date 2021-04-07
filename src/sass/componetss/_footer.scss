@@ -22,6 +22,11 @@
   &__logo-name {
     display: flex;
     justify-content: center;
+    font-weight: $font-weight800;
+    font-size: $FontSize26;
+    line-height: $LineHeight1-23;
+    letter-spacing: $LetterSpacing04;
+    color: $black-text;
   }
 
   &__logo-icon {
@@ -29,11 +34,7 @@
   }
 
   &__logo-text {
-    font-weight: $font-weight800;
-    font-size: $FontSize26;
-    line-height: $LineHeight1-23;
-    letter-spacing: $LetterSpacing04;
-    color: $black-text;
+    text-transform: uppercase;
   }
 
   &__logo-subtext {
@@ -45,6 +46,11 @@
     letter-spacing: $LetterSpacing18;
     text-transform: uppercase;
     color: $black-text;
+  }
+  &__logo-text--orange {
+    @media (min-width: $tablet) {
+      color: $orange-text;
+    }
   }
 
   &__tel-icon {
