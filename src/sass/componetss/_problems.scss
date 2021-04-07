@@ -1,27 +1,28 @@
 .problems {
+  width: 100%;
   background-color: $background-mobile-menu;
-  background-image: url(),
-    linear-gradient(to bottom, $background-mobile-menu 545px, $white-text 128px);
-  background-size: 445;
-
   border: none;
-
   @media screen and (min-width: $tablet) {
-    background-image: linear-gradient(to bottom, $background-mobile-menu 340px, $white-text 256px);
-
     border: none;
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: linear-gradient(to bottom, $background-mobile-menu 560px, $white-text 150px),
+
+     background-size: 445px 472px;
+     background-color: $background-mobile-menu;
+     background-repeat: no-repeat;
+     background-position: center;
+    background-image: 
       url(/images/fire_bg.svg);
-    background-size: 280px;
-    background-position: bottom right;
-    background-repeat: repeat-x, repeat-y;
+    background-position: top 88.5px right;
+  
   }
 }
 
 .problems__container {
+  height: 560px;
+  position: relative;
+  
 }
 
 .problems__title {
@@ -54,7 +55,7 @@
 
 .problems__list {
   list-style: none;
-
+ 
   font-weight: $font-weight700;
   font-size: $FontSize14;
   line-height: $LineHeight1-71;
