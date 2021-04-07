@@ -1,0 +1,106 @@
+.reviews {
+  padding-top: 50px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    margin: 0;
+    text-align: center;
+    font-weight: $font-weight800;
+    font-size: $FontSize20;
+    line-height: $LineHeight1-30;
+    letter-spacing: $LetterSpacing03;
+    @media (min-width: $tablet) {
+      font-size: $FontSize26;
+    }
+    @media (min-width: $desktop) {
+      font-size: $FontSize46;
+    }
+  }
+
+  &__button {
+    border: none;
+    padding: 5px 0;
+    fill: $orange-text;
+    background-color: $white-text;
+    position: absolute;
+    bottom: 27px;
+    transform: translateY(50%);
+
+    &--right {
+      right: 20px;
+    }
+    &--left {
+      left: 20px;
+    }
+  }
+}
+
+.review {
+  margin-top: 20px;
+  padding: 20px 20px 30px;
+  box-shadow: $box-shadow;
+  text-align: center;
+
+  &__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__icon {
+    margin: 20px auto 0px;
+    fill: $facebook-color;
+  }
+
+  &__name {
+    margin: 20px 0 0 0;
+    font-weight: $font-weight800;
+    font-size: $FontSize14;
+    line-height: $LineHeight1-21;
+    letter-spacing: $LetterSpacing08;
+    color: $orange-text;
+  }
+  &__study {
+    margin: 10px 0 0 0;
+    font-weight: $font-weight500;
+    font-size: $FontSize12;
+    line-height: $LineHeight1-25;
+    letter-spacing: $LetterSpacing08;
+    color: $gray-text;
+  }
+  &__description {
+    margin: 10px 0 0 0;
+    font-weight: $font-weight500;
+    font-size: $FontSize12;
+    line-height: $LineHeight1-67;
+    letter-spacing: 0;
+  }
+  &__link {
+    margin: 0 auto;
+    font-weight: $font-weight500;
+    font-size: $FontSize12;
+    line-height: $LineHeight1-67;
+    letter-spacing: 0;
+    color: $orange-text;
+    text-decoration: underline;
+  }
+}
+.reviewers {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin: 0 5px;
+  }
+
+  &__item:nth-child(n + 4) {
+    display: none;
+  }
+
+  &__img {
+    width: 54px;
+  }
+}
