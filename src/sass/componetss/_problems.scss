@@ -1,10 +1,14 @@
 .problems {
   background-color: $background-mobile-menu;
-  background-image: linear-gradient(to bottom, $background-mobile-menu 545px, $white-text 128px);
+  background-image: url(), linear-gradient(to bottom, $background-mobile-menu 545px, $white-text 128px)
+  ;
+  background-size: 445;
+  
   border: none;
 
   @media screen and (min-width: $tablet) {
-    background-image: linear-gradient(to bottom, $background-mobile-menu 340px, $white-text 256px);
+    background-image: linear-gradient(to bottom, $background-mobile-menu 340px, $white-text 256px), url(/images/fire_bg.svg);
+    
     border: none;
   }
 
