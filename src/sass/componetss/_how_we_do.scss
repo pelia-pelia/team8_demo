@@ -1,15 +1,20 @@
-.how-we-do{
+.how-we-do {
+  margin-top: 130px;
   padding-top: 130px;
+
+  @media (min-width: $tablet) {
+    padding-top: 50px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 130px;
+  }
 }
 
 .how-we-do__container {
   padding-top: 50px;
   padding-bottom: 50px;
-
-  // @media (min-width: 320px) and (max-width: 767px) {
-  //   width: 480px;
-  //   justify-content: center;
-  // }
 
   @media screen and (min-width: $desktop) {
     width: 1280px;
@@ -24,7 +29,7 @@
   line-height: $LineHeight1-30;
   letter-spacing: $LetterSpacing03;
   text-align: center;
-  margin: 0;
+  margin-top: 0;
 
   @media screen and (min-width: $desktop) {
     font-size: $FontSize46;
@@ -34,8 +39,6 @@
 
 .how__card-set {
   @media (min-width: 320px) {
-    // align-items: center;
-    // width: 480px;
     text-align: center;
     margin-top: 35px;
   }
@@ -43,8 +46,8 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    /* margin-top: 30px; */
     margin-left: -20px;
+    margin-bottom: -30px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -77,7 +80,7 @@
     width: 334px;
     flex-basis: calc((100% - 40px) / 2);
     margin-left: 20px;
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -136,14 +139,12 @@
 
 .how__card-heading {
   width: 280px;
-  font-style: normal;
   font-weight: $font-weight700;
   font-size: $FontSize14;
   line-height: 20px;
   position: relative;
-  // padding-bottom: 10px;
-
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 
   &::after {
     content: '';
@@ -151,21 +152,19 @@
     width: 20px;
     height: 2px;
     position: absolute;
-    bottom: -25%;
+    bottom: -50%;
     left: 47%;
     background-color: $orange-text;
   }
 
   @media screen and (min-width: $tablet) {
     width: 293px;
-    // padding-bottom: 10px;
   }
 
   @media screen and (min-width: $desktop) {
     font-size: $FontSize20;
     line-height: 28px;
     width: 365px;
-    padding-bottom: 10px;
   }
 }
 
@@ -175,10 +174,9 @@
   line-height: 20px;
   color: $gray-text;
 
-  padding: 15px 11px 22px 11px;
+  padding: 52px 25px 28px 25px;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 15px;
   }
 
   @media screen and (min-width: $desktop) {
