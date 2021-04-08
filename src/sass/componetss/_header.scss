@@ -1,9 +1,9 @@
 header {
-  position: relative;
+  // position: relative;
   background-color: $white-text;
 }
 .header__navigation {
-    // position: relative;
+    position: relative;
     display: flex;
     justify-content: space-between;
     text-align: center;
