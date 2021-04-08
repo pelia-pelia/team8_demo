@@ -174,5 +174,19 @@
 
   &__img {
     width: 54px;
+    background-size: cover;
+    border-radius: 50%;
+  }
+}
+
+.reviewers__item {
+  transition-property: border;
+  transition-duration: $duration-time;
+  transition-timing-function: $cubic-function;
+
+  &:focus,
+  &:hover {
+    border: 1px solid $orange-text;
+    border-radius: 50%;
   }
 }
