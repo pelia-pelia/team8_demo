@@ -18,14 +18,15 @@
 
 .problems__container {
   padding-top: 50px;
-  height: 560px;
+  height: 545px;
   position: relative;
 
   @media screen and (min-width: $tablet) {
     padding-top: 59px;
+    height: 340px;
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 100px;
+    padding-top: 560px;
   }
 }
 
