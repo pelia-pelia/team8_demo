@@ -44,12 +44,13 @@ ol {
   padding: 0;
 }
 
-a,
+a
  {
   text-decoration: none;
   color: currentColor;
   cursor: pointer;
 }
+
 link{
  text-decoration: none;
 }
@@ -75,6 +76,7 @@ h3
  {
   margin: 0;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
