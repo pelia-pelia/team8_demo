@@ -176,3 +176,14 @@
     width: 54px;
   }
 }
+
+.reviewers__link {
+  transition-property: border;
+  transition-duration: $duration-time;
+  transition-timing-function: $cubic-function;
+
+  &:focus,
+  &:hover {
+    border: 1px solid $orange-text;
+  }
+}
