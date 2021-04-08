@@ -6,12 +6,6 @@
   padding-bottom: 50px;
   background-color: $black-text;
 
-  @media screen and (min-width: 320px) and (max-width: $phone) {
-    height: 1350px;
-    overflow-x: hidden;
-    overflow-y: visible;
-  }
-
   @media screen and (min-width: $tablet) {
     padding-top: 60px;
     padding-bottom: 189px;
@@ -67,7 +61,7 @@
     position: absolute;
     top: 9px;
     left: -1px;
-    bottom: 90px;
+    bottom: 80px;
     border-left: 1px solid $white-text;
   }
 
@@ -205,9 +199,10 @@
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
     url('./../images/program-section.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 
   @media screen and (min-width: 320px) and (max-width: $phone) {
-    z-index: 10;
+    clip: rect(0 117px 138px 0);
   }
 
   @media screen and (min-width: $tablet) {
