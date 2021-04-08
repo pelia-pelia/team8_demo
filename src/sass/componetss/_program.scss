@@ -61,7 +61,7 @@
     position: absolute;
     top: 9px;
     left: -1px;
-    bottom: 90px;
+    bottom: 80px;
     border-left: 1px solid $white-text;
   }
 
@@ -76,7 +76,6 @@
 
 .program-list__item {
   position: relative;
-  margin-top: 30px;
 
   @media screen and (min-width: $tablet) {
     margin-left: 50px;
@@ -86,6 +85,14 @@
     display: flex;
     flex-direction: column;
     margin-left: 0;
+    margin-top: 60px;
+  }
+}
+
+.program-list__item:not(:first-child) {
+  margin-top: 30px;
+
+  @media screen and (min-width: $desktop) {
     margin-top: 60px;
   }
 }
@@ -194,15 +201,15 @@
   content: '';
   min-width: 176px;
   min-height: 137px;
-  left: calc(100% - 65%);
-  top: calc(100% - 3%);
+  left: 35%;
+  bottom: -9%;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
     url('./../images/program-section.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 
   @media screen and (min-width: 320px) and (max-width: $phone) {
-    clip: rect(0 117px 138px 0);
+    clip-path: inset(0 30% 0 0);
   }
 
   @media screen and (min-width: $tablet) {
