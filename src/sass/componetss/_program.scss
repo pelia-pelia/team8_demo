@@ -1,6 +1,4 @@
 .program {
-  min-width: 320px;
-
   position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -40,19 +38,21 @@
 
 .program__list {
   position: relative;
-  width: auto;
-  left: 30%;
   margin-top: 43px;
   padding-left: 20px;
   color: $gray-text;
 
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-left: 30%;
+  }
+
   @media screen and (min-width: $tablet) {
-    left: 10%;
+    margin-left: 10%;
   }
 
   @media screen and (min-width: $desktop) {
     display: flex;
-    left: 0%;
+    margin-left: 0;
     padding-left: 0;
   }
 }
@@ -68,9 +68,8 @@
 
   @media screen and (min-width: $desktop) {
     position: absolute;
-    left: -700px;
-    right: -700px;
-    min-width: 1685px;
+    right: -27%;
+    width: 160%;
     border-top: 1px solid $white-text;
   }
 }
@@ -200,24 +199,24 @@
 .program__list::after {
   position: absolute;
   content: '';
-  min-width: 176px;
-  min-height: 137px;
-  left: 35%;
-  bottom: -9%;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
     url('./../images/program-section.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  text-align: right;
 
-  @media screen and (min-width: 320px) and (max-width: $phone) {
-    clip-path: inset(0 30% 0 0);
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    min-width: 60%;
+    height: 150px;
+    left: 46%;
+    bottom: -9%;
   }
 
   @media screen and (min-width: $tablet) {
-    min-width: 384px;
-    min-height: 280px;
-    left: calc(100% - 64%);
-    top: calc(100% - 17%);
+    width: 384px;
+    height: 280px;
+    left: 36%;
+    bottom: -17%;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
       url('./../images/program-section.jpg');
     background-repeat: no-repeat;
@@ -225,10 +224,10 @@
   }
 
   @media screen and (min-width: $desktop) {
-    min-width: 760px;
-    min-height: 502px;
-    left: -18%;
-    top: 66%;
+    width: 760px;
+    height: 502px;
+    left: -20%;
+    bottom: -52%;
   }
 }
 
